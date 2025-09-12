@@ -40,6 +40,10 @@ Para utilizar o git precisamos instalar no computador através do site:(https://
 
 **IMPORTANTE:** Não é possivel versionar uma pasta que já esta sendo versionada pelo git. 
 
+**CONFIGURAR O USUÁRIO E EMAIL**
+````bash
+git config --global user.name "
+git config --global user.email 
 Para começar a versionar uma pasta com git utilizamos o comando `init`
 **OBS** Só é executado uma vez.
 ````bash
