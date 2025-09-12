@@ -45,8 +45,7 @@ Para utilizar o git precisamos instalar no computador através do site:(https://
 git config --global user.name "
 git config --global user.email 
 Para começar a versionar uma pasta com git utilizamos o comando `init`
-**OBS** Só é executado uma vez.
-````bash
+**OBS** Só é executado uma vez.````
 git init
 ````
 
@@ -63,4 +62,18 @@ Ao usarmos o `commit` enviamos uma mensagem como um porque fizemos tudo até ent
 **VERMELHO** Quando os arquivos estão em vermelho, foram criados ou editados e não estão peontos para serem salvos,precisa rodar o `add`.
 
 **VERDE** Quando os arquivos estão em verdes, já foram preparados para serem salvos próximo passo é rodar o `commit`. 
+
+Para sincronizar o repositorio local com um criado no Github, utilizamos o `remote`
+````bash
+git remote add origin <URL>
+````
+
+O melhor caminho é utilizar a segunda parte de comandos que são apresentados na página do Github após criar um repositório.
+
+Para enviar os commits para o Github utilizamos o `push`
+````bash
+git push
+````
+
+Na primeira execução deve ser utilizado o push como apresentado na página do Github.
 
