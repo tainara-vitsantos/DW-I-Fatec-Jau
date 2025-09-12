@@ -85,3 +85,5 @@ Para receber as alterações feitas em outro computador que estão no Github par
 ````bash
 git pull
 ````
+
+....
