@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula0509</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Guia de Tags HTML</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#estrutura">Estrutura e Texto</a></li>
+            <li><a href="#semantica">Semânticas (HTML5)</a></li>
+            <li><a href="#multimidia">Multimídia (HTML5)</a></li>
+            <li><a href="#formularios">Formulários</a></li>
+        </ul>
+    </nav>
+
+    <section id="estrutura">
+        <h1>Tags de Estrutura e Texto</h1>
+        <hr>
+
+        <p>&lt;h1&gt; até &lt;h6&gt; para diferentes níveis de títulos, sendo &lt;h1&gt; o mais importante.</p>
+        <h1>Eu sou a tag &lt;h1&gt;</h1>
+        <h2>Eu sou a tag &lt;h2&gt;</h2>
+        <h3>Eu sou a tag &lt;h3&gt;</h3>
+        <h4>Eu sou a tag &lt;h4&gt;</h4>
+        <h5>Eu sou a tag &lt;h5&gt;</h5>
+        <h6>Eu sou a tag &lt;h6&gt;</h6>
+
+        <br /><br>
+
+        <p>Eu sou um parágrafo usando a tag &lt;p&gt;.</p>
+        <p>Nesta frase, tenho um <strong>termo em destaque</strong> usando a tag &lt;strong&gt;.</p>
+        <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag &lt;em&gt;.</p>
+        <p>Podemos criar também <mark>um texto marcado</mark> usando a tag &lt;mark&gt;.</p>
+        <p>Estamos criando um <small>texto pequeno</small> nesse parágrafo, com a tag &lt;small&gt;.</p>
+        <p>Podemos marcar <del>um texto como excluído</del> para indicar que ele deve ser lido, mas não considerado, com
+            a tag &lt;del&gt;.</p>
+        <p>Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois,
+            com a tag &lt;ins&gt;.</p>
+        <p>Para inserir coisas do tipo x<sup>20</sup>+3. Com a tag &lt;sup&gt;.</p>
+        <p>Para inserir coisas do tipo H<sub>2</sub>O. Com a tag &lt;sub&gt;.</p>
+        <p> A tag &lt;br&gt; é para quebrar linha, vamos quebra 5 linhas </p>
+        <br><br><br><br><br>
+        <p>Viu?</p>
+        <p> A tag &lt;hr&gt; é para fazer uma linha horizontal. Olhe abaixo:</p>
+        <hr>
+
+        <br />
+        <h2>Listas não ordenadas</h2>
+
+        <p>Esse é um exemplo de lista não ordenada, usando a tag &lt;ul&gt;.</p>
+        <ul>
+            <li>Goiaba, usando a tag &lt;li&gt;</li>
+            <li>Maçã</li>
+            <li>Laranja</li>
+        </ul>
+
+        <p>Esse é um exemplo de lista não ordenada com marcador círculo</p>
+        <ul type="circle">
+            <li>Goiaba</li>
+            <li>Maçã</li>
+            <li>Laranja</li>
+        </ul>
+
+        <p>Esse é um exemplo de lista não ordenada com marcador quadrado</p>
+        <ul type="square">
+            <li>Goiaba</li>
+            <li>Maçã</li>
+            <li>Laranja</li>
+        </ul>
+
+        <h2>Listas Ordenadas</h2>
+
+        <p>Esse é um exemplo de lista ordenada, usando a tag &lt;ol&gt;.</p>
+        <ol>
+            <li>Goiaba</li>
+            <li>Maçã</li>
+            <li>Laranja</li>
+        </ol>
+
+        <p>Esse é um exemplo de lista ordenada definindo o valor inicial</p>
+        <ol start="4">
+            <li>Graviola</li>
+            <li>Banana</li>
+            <li>Uva</li>
+        </ol>
+
+        <p>Esse é um exemplo de lista ordenada reversa</p>
+        <ol reversed>
+            <li>Goiaba</li>
+            <li>Maçã</li>
+            <li>Laranja</li>
+        </ol>
+
+        <br />
+        <h3>A tag &lt;img&gt; é para colocar uma imagem</h3>
+        <p><code>&lt;img src="imagem.jpg" alt="Descrição da imagem"&gt;</code></p>
+
+        <br />
+        <h3>A tag &lt;span&gt; é para definir uma parte genérica de texto em linha</h3>
+        <p>Eu sou um <span style="background:#ff0;">texto dentro da tag span</span>.</p>
+
+        <br />
+        <h3>A tag &lt;div&gt; define uma divisão genérica em bloco</h3>
+        <p><code>&lt;div&gt;Conteúdo&lt;/div&gt;</code></p>
+
+        <br />
+        <h3>A tag &lt;a&gt; cria um link para outra página ou site</h3>
+        <p><code>&lt;a href="https://www.exemplo.com"&gt;Visite o site&lt;/a&gt;</code></p>
+    </section>
+
+    <section id="semantica">
+        <h1>Tags Semânticas do HTML5</h1>
+        <hr />
+
+        <h3>A tag &lt;header&gt; define o cabeçalho de uma página ou seção.</h3>
+        <code>
+            &lt;header&gt;
+            <br />
+            &nbsp;&nbsp;&lt;h1&gt;Cabeçalho da página&lt;/h1&gt;
+            <br />
+            &lt;/header&gt;
+        </code>
+
+        <h3>A tag &lt;footer&gt; define o rodapé de uma página ou seção.</h3>
+        <code>
+            &lt;footer&gt;
+            <br />
+            &nbsp;&nbsp;Rodapé com informações
+            <br />
+            &lt;/footer&gt;
+        </code>
+
+        <h3>A tag &lt;nav&gt; define uma seção de navegação.</h3>
+        <code>
+            &lt;nav&gt;
+            <br />
+            &nbsp;&nbsp;&lt;a href="#home"&gt;Home&lt;/a&gt;
+            <br />
+            &nbsp;&nbsp;&lt;a href="#contato"&gt;Contato&lt;/a&gt;
+            <br />
+            &lt;/nav&gt;
+        </code>
+
+        <h3>A tag &lt;main&gt; define o conteúdo principal da página.</h3>
+        <code>
+            &lt;main&gt;Conteúdo principal&lt;/main&gt;
+        </code>
+
+        <h3>A tag &lt;section&gt; define uma seção temática de conteúdo.</h3>
+        <code>
+            &lt;section&gt;Seção de artigos&lt;/section&gt;
+        </code>
+
+        <h3>A tag &lt;article&gt; representa um conteúdo independente e reutilizável.</h3>
+        <code>
+            &lt;article&gt;Post de blog&lt;/article&gt;
+        </code>
+
+        <h3>A tag &lt;aside&gt; define conteúdo lateral ou complementar.</h3>
+        <code>
+            &lt;aside&gt;Barra lateral&lt;/aside&gt;
+        </code>
+    </section>
+
+    <section id="multimidia">
+        <h1>Tags de Multimídia (HTML5)</h1>
+        <hr />
+
+        <h3>A tag &lt;video&gt; incorpora um vídeo na página.</h3>
+        <code>
+            &lt;video controls width="320"&gt;<br />
+            &nbsp;&nbsp;&lt;source src="video.mp4" type="video/mp4"&gt;<br />
+            &nbsp;&nbsp;Seu navegador não suporta vídeo.<br />
+            &lt;/video&gt;
+        </code>
+
+        <h3>A tag &lt;audio&gt; incorpora um áudio na página.</h3>
+        <code>
+            &lt;audio controls&gt;<br />
+            &nbsp;&nbsp;&lt;source src="audio.mp3" type="audio/mpeg"&gt;<br />
+            &nbsp;&nbsp;Seu navegador não suporta áudio.<br />
+            &lt;/audio&gt;
+        </code>
+    </section>
+
+    <section id="formularios">
+        <h1>Tags de Formulário</h1>
+        <hr />
+
+        <h3>A tag &lt;form&gt; cria um formulário de entrada de dados.</h3>
+        <code>
+            &lt;form action="/enviar" method="post"&gt;<br />
+            &nbsp;&nbsp;&lt;label for="nome"&gt;Nome:&lt;/label&gt;<br />
+            &nbsp;&nbsp;&lt;input type="text" id="nome" name="nome"&gt;<br />
+            &nbsp;&nbsp;&lt;button type="submit"&gt;Enviar&lt;/button&gt;<br />
+            &lt;/form&gt;
+        </code>
+
+        <h3>A tag &lt;input&gt; cria campos de entrada de dados.</h3>
+        <code>&lt;input type="text" name="usuario"&gt;</code>
+
+        <h3>A tag &lt;label&gt; define o rótulo para um campo de formulário.</h3>
+        <code>&lt;label for="email"&gt;Email:&lt;/label&gt;</code>
+
+        <h3>A tag &lt;button&gt; cria um botão clicável.</h3>
+        <code>&lt;button type="submit"&gt;Enviar&lt;/button&gt;</code>
+    </section>
+
+
+</body>
+
+</html>
