@@ -1,6 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
+<!--A TAG STYLE no head é chamado de CSS INTERNO
+Aqui podemos declarar formatações para toda a página -->
+<style>
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+
+    /* Tipo de declaração abaixo é TAG */
+    p {
+        color: rgb(206, 56, 173);
+        font-weight: bold;
+    }
+
+    /*Para ID usamos o #, ele vai aplicar a um elemento especifico*/
+    #primeiroParagrafo {
+        color: rgb(33, 129, 24);
+        font-weight: bold;
+    }
+
+    #segundoParagrafo {
+        color: darkviolet;
+        font-weight: bold;
+    }
+
+    p {
+        color: #ccc;
+
+    }
+
+    /* As classes começam com .e são aplicadas somene quando declaradas na propriedade class da tag, porém, podendo ser repetida a vontade.*/
+    .zebra {
+        background-color: #11ffeb;
+        padding: 5px 15px;
+    }
+
+    div{
+        display: block;
+    }
+
+    div div {
+        margin-left: 20px;
+    }
+</style>
+
 <head>
     <meta charset="UTF-8">
     <title> HTML com CSS</title>
@@ -8,12 +57,38 @@
 
 <body>
     <!-- CSS inline usa a propriedade na TAG-->
-    <h1 style="color:red"> Somente este H1 irá receber a formatação</h1>
+    <h1 style="color: crimson;"> Somente este H1 irá receber a formatação</h1>
     <h1> Como não tenho style, fico na formatação padrão do navegador.</h1>
 
-        <h2
-         style="font-family: Arial; font-size: 12px; color: #fa12fa; text-align: center; "
-         > Tenho várias formatações no Inline</h2>
+    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti quia omnis quas dolor, illum corporis? Nisi
+        ut incidunt tempore quis vitae dicta quod numquam id error? Est possimus ea vitae.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo modi ratione fuga alias sint cum velit praesentium
+        nobis unde corrupti. Dicta debitis ducimus nesciunt veniam perferendis quo! Minus, reprehenderit voluptate!</p>
+
+    <p id="primeiroParagrafo">Eu tenho um ID</p>
+
+    <p id="sengundoParagrafo"> Eu tenho um segundo ID </p>
+
+    <ol>
+        <li class="zebra">Item 1 </li>
+        <li> Item 2</li>
+        <li class="zebra">Item 3 </li>
+        <li> Item 4</li>
+        <li class="zebra">Item 5 </li>
+        <li> Item 6</li>
+        </ol>
+
+        <div style="background-color: green; height: 200px; width: 200px; ">
+            <div style="background-color: yellow; height: 100px; width: 100px;">
+                <b style="margin: 0px 0px 0px 0px;">Teste de Padding</b>
+                <i style="margin: 0px 0px 0px 0px;"> Teste de Margin</i>
+            </div>
+        </div>
+
+
+    <h2 style="font-family: Arial; font-size: 12px; color: #0d56b6; text-align: center; "> Tenho várias formatações no
+        Inline</h2>
 
 </body>
 
