@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+body {
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    background: #000;
+    color: #F5F5F7;
+}
+
+a {
+    text-decoration: none;
+    color: #F5F5F7;
+}
+
+header {
+    height: 100px;
+    background-color: #430335;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #032e53;
+    width: 100%;
+}
+
+.menu-superior ul {
+    list-style-type: none;
+    /*Garante que nada saia dos limites do Menu*/
+    overflow: hidden;
+    text-align: center;
+}
+
+.menu-superior li {
+    /*Flutua todos os elementos a esquerda
+    float: left;*/
+
+    /*Coloca os LI como blocos na mesma linha */
+    display: inline-block;
+}
+
+.menu-superior li a {
+    /*Faz o A pegar todo o espaço do LI */
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    padding: 41px 25px;
+}
+
+/*HOVER aciona o CSS quando o mouse passa por cima do elemento*/
+.menu-superior li a:hover {
+    background-color: #032e53;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+footer p {
+    text-align: center;
+    padding: 18px 0;
+    
+    /* Equivalente ao código acima
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 0;
+    padding-right: 0; */
+}
+
+.container {
+    padding: 0 20%;
+    height: calc(100% - 154px);
+}
