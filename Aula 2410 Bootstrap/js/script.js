@@ -58,9 +58,12 @@ Ex de como pegar todo o body da página: document.body
 document.title ="Troquei o title da página com JS"
 
 
+
 function calcularIdade(){
     let idade = ano -  nascimento.value
-    console.log(`Voce nasceu em ${nascimento.value}, estamos em ${ano} então você tem ${idade}!`)
+    let textoResultado = `Voce nasceu em <b>${nascimento.value}</b>, estamos em ${ano} então você tem ${idade}!`
+    console.log(textoResultado)
+    resultado.innerHTML = textoResultado
 }
 
 
