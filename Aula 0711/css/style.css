@@ -1,0 +1,48 @@
+.bg-black{
+    background-color: black;
+    color: white;
+}
+
+.display{
+    font-size: calc(0.8rem + 1vw);
+}
+
+.text-roxo{
+    color:#a83da8;
+}
+
+.bg-roxo{
+    background-color: #a83da8;
+    color: #000;
+
+}
+
+.active{
+    font-size: 900;
+    background-color: #a83da8;
+    color: #000;
+}
+
+.list-group-item-active{
+    font-size: 900;
+    background-color: #a83da8;
+    color: #000;
+    border-color: #a83da8;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #a83da8;
+    --bs-btn-border-color: #a83da8;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #0b5ed7;
+    --bs-btn-hover-border-color: #a83da8;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #a83da8;
+    --bs-btn-active-border-color: #a83da8;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #a83da8;
+    --bs-btn-disabled-border-color: #a83da8;
+}

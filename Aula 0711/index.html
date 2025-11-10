@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filmes e Séries</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body class="bg-black">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="imgs/logo1.png" alt="Bootstrap" width="100" height="50">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Página Inicial</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Filmes
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="filmes/">Página de Filmes</a></li>
+
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/filmes/americanos/">Americanos</a></li>
+              <li><a class="dropdown-item" href="/filmes/Brasileiros">Brasileiros</a></li>
+            </ul>
+          </li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Séries
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="series/">Página de Séries</a></li>
+
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="series/animes/">Animes</a></li>
+            </ul>
+          </li>
+
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- Final da Navbar -->
+
+  <!-- Container -->
+  <div class="container-fluid ">
+
+    <div class="row mt-3 pe-3">
+
+      <div class="col-3">
+        <div class="list-group list-group-flush">
+          <a href="/" class="list-group-item list-group-item-active" aria-current="true">
+            Home
+            <a href="filmes/" class="list-group-item list-group-item-action">Filmes</a>
+            <a href="series/" class="list-group-item list-group-item-action">Séries</a>
+        </div>
+      </div>
+
+      <!-- Conatiner 2 -->
+      <div class="col-9 bg-dark">
+        <h1 class="text-center text-roxo">
+          Conheça mais sobre os filmes e séries mundiais
+        </h1>
+
+        <div class="row mt-1 justify-content-evenly">
+          <h2 class="display-6"> Filmes Americanos</h2>
+
+          <!-- Filme 1 -->
+          <div class="col-2">
+            <div class="card">
+              <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/xLxgVxFWvb9hhUyCDDXxRPPnFck.jpg"
+                class="card-img-top" alt="Capa do filme Coringa">
+              <div class="card-body">
+                <h5 class="card-title">Coringa (2019)</h5>
+                <a href="/filmes/americanos/coringa.html" class="btn btn-primary">Saiba Mais</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- filme 2 -->
+          <div class="col-2">
+            <div class="card">
+              <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/tPq8xqhsTYZzUGwMKuksa0eyeGZ.jpg"
+                class="card-img-top" alt="Capa do filme nossa culpa">
+              <div class="card-body">
+                <h5 class="card-title">Nossa Culpa (2025)</h5>
+                <a href="#" class="btn btn-primary">Saiba Mais</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Filme 3 -->
+          <div class="col-2">
+            <div class="card">
+              <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/1uuOVgBsYZb0DLbFnF5xvEnZ7gv.jpg"
+                class="card-img-top" alt="CApa do filme premonição">
+              <div class="card-body">
+                <h5 class="card-title">Premonição 6(2025))</h5>
+                <a href="/filmes/americanos/bailarina.html" class="btn btn-primary">Saiba Mais</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Filme 4 -->
+          <div class="col-2">
+            <div class="card">
+              <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/pWvQsP9o1MQ4vQNjpL9QeYFXKOs.jpg"
+                class="card-img-top" alt="CApa do filme Kraven">
+              <div class="card-body">
+                <h5 class="card-title">Kraven: O Caçador (2024)</h5>
+                <a href="#" class="btn btn-primary">Saiba Mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-1">
+          <h2 class="display-6"> Filmes Brasileiros</h2>
+          <div class="col-4"></div>
+          <div class="col-4"></div>
+          <div class="col-4"></div>
+        </div>
+
+        <div class="row mt-1">
+          <h2 class="display-6"> Séries</h2>
+          <div class="col-4"></div>
+          <div class="col-4"></div>
+          <div class="col-4"></div>
+        </div>
+
+
+        <div class="row mt-1">
+          <h2 class="display-6"> Animes</h2>
+          <div class="col-4"></div>
+          <div class="col-4"></div>
+          <div class="col-4"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="/js/script.js"></script>
+</body>
+
+</html>
